@@ -11,23 +11,29 @@
 </head>
 
 <body>
-<!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/mlezbjla"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-</form>
+    <form action="https://formspree.io/f/mlezbjla" method="POST">
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Nom</label>
+            <input name="nom" type="text" class="form-control" id="exampleFormControlTextarea1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input name="email" type="email" class="form-control" id="exampleFormControlInput1"
+                placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Téléphone</label>
+            <input name="telephone" type="tel" class="form-control" id="exampleFormControlTextarea1">
+        </div>
+        <input type="hidden" name="_subject" value="Resnseignement CV">
+        <input type="hidden" name="_next" value="Merci">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 </body>
+
 
 </html>
